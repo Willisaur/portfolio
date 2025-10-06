@@ -7,7 +7,7 @@ import { Navigation } from "@/components/navigation"
 
 export default function Portfolio() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background overflow-x-hidden">
       <Navigation />
       <HeroSection />
       <AboutSection />

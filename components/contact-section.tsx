@@ -36,21 +36,21 @@ export function ContactSection() {
 						connect and discuss how we can work together!
 					</p>
 				</div>
-				<div className="flex justify-center space-x-6">
-					{socialLinks.map((link, index) => (
-						<a
-							key={index}
-							href={link.url}
-							target="_blank"
-							rel="noopener noreferrer"
-							className={`flex items-center space-x-3 px-6 py-4 border-2 border-muted-foreground group-hover:border-current transition-colors rounded-lg ${link.color} group`}
-							aria-label={link.name}
-						>
-							<link.icon className="w-8 h-8" />
-							<span className="text-lg font-medium">{link.name}</span>
-						</a>
-					))}
-				</div>
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
+          {socialLinks.map((link, index) => (
+            <a
+              key={index}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`flex items-center space-x-3 px-6 py-4 border-2 border-muted-foreground hover:border-current transition-colors rounded-lg ${link.color} group w-full sm:w-auto justify-center sm:justify-start max-w-xs`}
+              aria-label={link.name}
+            >
+              <link.icon className="w-8 h-8" />
+              <span className="text-lg font-medium">{link.name}</span>
+            </a>
+          ))}
+        </div>
 				<div className="mt-16 pt-8 border-t border-border">
 					<p className="text-muted-foreground text-sm">
 						© 2025 Will Starling. All Rights Reserved.

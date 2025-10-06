@@ -13,7 +13,7 @@ const socialLinks = [
 		name: "GitHub",
 		icon: Github,
 		url: "https://github.com/willisaur",
-		color: "hover:text-gray-900",
+		color: "hover:text-gray-500",
 	},
 	{
 		name: "Email",

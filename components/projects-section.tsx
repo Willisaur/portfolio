@@ -33,8 +33,8 @@ const projects = [
     image: "/things-to-rent.png",
     technologies: ["React Native", "OpenWeather API", "Redux"],
     githubUrl: "https://github.com/wzid/things-to-rent",
-    demoUrl: null,
-    hasDemo: false,
+    demoUrl: "https://hackathon-self-six.vercel.app",
+    hasDemo: true,
     featured: false,
   },
   {
@@ -108,7 +108,7 @@ export function ProjectsSection() {
                     <Button size="sm" asChild>
                       <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4 mr-2" />
-                        {project.hasDemo ? "Live Demo" : "Project Site"}
+                        {project.hasDemo ? "Live Demo" : "Website"}
                       </a>
                     </Button>
                   )}

@@ -40,18 +40,38 @@
 }
 
 .dark {
-  --background: hsl(0, 0%, 14.5%);
+  --background: hsl(0, 0%, 10.5%);
   --foreground: hsl(0, 0%, 98.5%);
-  --card: hsl(0, 0%, 14.5%);
+  --card: hsl(0, 0%, 10.5%);
   --card-foreground: hsl(0, 0%, 98.5%);
   --popover: hsl(0, 0%, 14.5%);
   --popover-foreground: hsl(0, 0%, 98.5%);
-  --primary: hsl(240, 100%, 45%); /* Blue */
-  --primary-foreground: hsl(0, 0%, 20.5%);
-  --secondary: hsl(0, 100%, 35%); /* Darker Red */
+  --primary: hsl(230, 75%, 50%);
+  --primary-foreground: hsl(0, 0%, 98.5%);
+  --secondary: hsl(0, 100%, 35%);
   --secondary-foreground: hsl(0, 0%, 98.5%);
-  --accent: hsl(240, 100%, 50%); /* Blue */
+  --muted: hsl(0, 0%, 20%);
+  --muted-foreground: hsl(0, 0%, 65%);
+  --accent: hsl(240, 100%, 50%);
   --accent-foreground: hsl(0, 0%, 98.5%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98.5%);
+  --border: hsl(0, 0%, 27.5%);
+  --input: hsl(0, 0%, 20%);
+  --ring: hsl(240, 100%, 45%, 0.5);
+  --chart-1: hsl(240, 100%, 45%);
+  --chart-2: hsl(0, 100%, 35%);
+  --chart-3: hsl(227.392, 100%, 39.8%);
+  --chart-4: hsl(84.429, 100%, 82.8%);
+  --chart-5: hsl(70.08, 100%, 76.9%);
+  --sidebar: hsl(0, 0%, 20%);
+  --sidebar-foreground: hsl(0, 0%, 95%);
+  --sidebar-primary: hsl(0, 0%, 98.5%);
+  --sidebar-primary-foreground: hsl(0, 0%, 14.5%);
+  --sidebar-accent: hsl(0, 0%, 25%);
+  --sidebar-accent-foreground: hsl(0, 0%, 98.5%);
+  --sidebar-border: hsl(0, 0%, 27.5%);
+  --sidebar-ring: hsl(0, 0%, 55%);
 }
 
 @theme inline {
@@ -103,7 +123,6 @@
     @apply bg-background text-foreground;
   }
 
-  /* Added smooth scrolling for single-page navigation */
   html {
     scroll-behavior: smooth;
   }
